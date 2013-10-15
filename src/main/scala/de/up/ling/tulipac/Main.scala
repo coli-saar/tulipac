@@ -2,7 +2,7 @@ package de.up.ling.tulipac
 
 import scala.xml.Elem
 import java.io._
-import com.google.common.io._
+import com.google.common.io.Files
 
 object Main {
 	private val treeToFamily = scala.collection.mutable.Map[String,String]()

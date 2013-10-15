@@ -1,7 +1,6 @@
 package de.up.ling.tulipac
 
 import scala.util.parsing.combinator._
-import com.sun.org.apache.xerces.internal.impl.xpath.regex.RegexParser
 import java.io.Reader
 
 class TagParser extends RegexParsers {
