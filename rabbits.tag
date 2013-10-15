@@ -1,20 +1,50 @@
+tree trans:
+  s {
+    np![case=nom][]
+    vp {
+      v+
+      np![case=acc][]
+    }
+}
+
+
 tree intrans:
   s {
-    np![num=sg]
+    np![case=nom][]
     v+
   }
 
-tree pns:
-  np[][num=sg] {
-    pn+
+
+tree np_n:
+  np[][case=?case] {
+    det! [case=?case][]
+    n+   [case=?case][]
   }
 
-tree pnp:
-  np[][num=pl] {
-    n+
+tree aux_adj:
+  n [][case=?case] {
+    adj+ [case=?case][]
+    n* [case=?case][]
   }
+    
 
-word 'sleeps': intrans
-word 'peter': pns
-word 'dogs': pnp
+tree det:
+  det+
+
+
+word 'jagt': trans
+
+word 'hund': np_n[case=nom]
+word 'hund': np_n[case=acc]
+
+word 'hase': np_n[case=nom]
+word 'hasen': np_n[case=acc]
+
+word 'der': det[case=nom]
+word 'den': det[case=acc]
+
+lemma 'schnell': aux_adj {
+  word 'schnelle': [case=nom]
+  word 'schnellen': [case=acc]
+}
 
