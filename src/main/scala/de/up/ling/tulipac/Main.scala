@@ -22,19 +22,19 @@ object Main {
 	  val gFilename = new File(filenameStem + "-g.xml")
 	  println(s"Writing grammar file ${gFilename} ...")
 	  val gFile = new PrintWriter(gFilename)
-	  xml.XML.write(gFile, mkGrammar(treeList), "UTF-8", xmlDecl = true, doctype = xml.dtd.DocType("mcgrammar", xml.dtd.SystemID("xmg-mctag.dtd.xml"), Nil))
+	  xml.XML.write(gFile, mkGrammar(treeList), "UTF-8", xmlDecl = true, doctype = xml.dtd.DocType("mcgrammar", xml.dtd.SystemID("xmg-mctag.dtd,xml"), Nil))
 	  gFile.close()
 	  
 	  val mFilename = new File(filenameStem + "-m.xml")
 	  println(s"Writing morphology file ${mFilename} ...")
 	  val mFile = new PrintWriter(mFilename)
-	  xml.XML.write(mFile, mkMorph(wordList), "UTF-8", xmlDecl = true, doctype = xml.dtd.DocType("mcgrammar", xml.dtd.SystemID("xmg-mctag.dtd.xml"), Nil))
+	  xml.XML.write(mFile, mkMorph(wordList), "UTF-8", xmlDecl = true, doctype = xml.dtd.DocType("mcgrammar", xml.dtd.SystemID("xmg-mctag.dtd,xml"), Nil))
 	  mFile.close()
 	  
 	  val lFilename = new File(filenameStem + "-l.xml")
 	  println(s"Writing lexicon file ${lFilename} ...")
 	  val lFile = new PrintWriter(lFilename)
-	  xml.XML.write(lFile, mkLex(wordList), "UTF-8", xmlDecl = true, doctype = xml.dtd.DocType("mcgrammar", xml.dtd.SystemID("xmg-mctag.dtd.xml"), Nil))
+	  xml.XML.write(lFile, mkLex(wordList), "UTF-8", xmlDecl = true, doctype = xml.dtd.DocType("mcgrammar", xml.dtd.SystemID("xmg-mctag.dtd,xml"), Nil))
 	  lFile.close()
 	  
 	  println("Done.")
