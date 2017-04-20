@@ -1,5 +1,5 @@
 tree trans:
-  s {
+  S {
     np![case=nom][]
     vp {
       v+
@@ -9,7 +9,7 @@ tree trans:
 
 
 tree intrans:
-  s {
+  S {
     np![case=nom][]
     v+
   }
