@@ -11,4 +11,4 @@ Tulipac, the TuLiPA grammar compiler, fixes this problem by
 providing a front-end that compiles TAG grammars in a human-readable
 format to the XML format assumed by TuLiPA.
 
-Please see the [Wiki](https://bitbucket.org/tclup/tulipac/wiki/Home) for details.
+**Note:** You can now directly parse TAG grammars in the tulipac format with [Alto](https://github.com/coli-saar/alto/wiki/Parsing-TAG-with-feature-structures-%28tulipac%29). This will probably be faster than parsing with TuLiPA directly.
