@@ -1,5 +1,7 @@
 # tulipac: The TuLiPA compiler
 
+**Note:** You can now directly parse TAG grammars in the tulipac format with [Alto](https://github.com/coli-saar/alto/wiki/Parsing-TAG-with-feature-structures-%28tulipac%29). This will probably be faster than parsing with TuLiPA directly. Tulipac itself is no longer under development.
+
 [TuLiPA](https://sourcesup.cru.fr/tulipa/) is the Tübingen Parsing Architecture. 
 It is an excellent parser
 for teaching [tree-adjoining grammar](http://en.wikipedia.org/wiki/Tree-adjoining_grammar),
@@ -11,4 +13,4 @@ Tulipac, the TuLiPA grammar compiler, fixes this problem by
 providing a front-end that compiles TAG grammars in a human-readable
 format to the XML format assumed by TuLiPA.
 
-**Note:** You can now directly parse TAG grammars in the tulipac format with [Alto](https://github.com/coli-saar/alto/wiki/Parsing-TAG-with-feature-structures-%28tulipac%29). This will probably be faster than parsing with TuLiPA directly.
+
